@@ -1,0 +1,7 @@
+.dice {  
+    padding: 4px;  
+    background-color: tomato;  
+    width: 104px;  
+    height: 104px;  
+    border-radius: 10%;
+}
