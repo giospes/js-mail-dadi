@@ -11,6 +11,7 @@ gameBtn.addEventListener('click', game);
 
 
 function game(){
+    const winBanner=  document.getElementById("winner");
     const playerName= document.getElementById("Pname").value;
     const Ndadi = parseInt(document.getElementById("Ndadi").value);
     let playerNameContainer = document.getElementById("player-container");
@@ -28,12 +29,12 @@ function game(){
     if(player1.somma === cpu.somma){
         winner = "draw"
     }else if(player1.somma > cpu.somma){
-        winner = "cpu"
+        winner = "Hai Perso"
     }
     else{
-        winner = "player1"
+        winner = "Hai vinto"
     }
-    console.log(winner)
+    winBanner.innerHTML += winner
 
 }
 
